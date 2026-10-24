@@ -3,8 +3,7 @@ public class PegawaiKontrak extends Pegawai {
     private int jumlahHariKerja;
 
     public PegawaiKontrak(String nama, String idPegawai, double upahPerHari, int jumlahHariKerja, boolean capaiTarget) {
-        // Gaji pokok kontrak = upah per hari x jumlah hari kerja
-        super(nama, idPegawai, "Pegawai Kontrak", upahPerHari * jumlahHariKerja, capaiTarget);
+        super(nama, idPegawai, "Pegawai Kontrak", 0, capaiTarget);
         setUpahPerHari(upahPerHari);
         setJumlahHariKerja(jumlahHariKerja);
     }
